@@ -1,0 +1,211 @@
+{
+    "code": "VOŠ-2026J-APR-V01",
+    "title": "Testový sešit",
+    "subject": "Algoritmizace a programování",
+    "level": "VOŠ (Vyšší odborná škola)",
+    "timeLimit": "30 minut",
+    "instructions": "Záznamy provádějte výhradně do záznamového archu. V uzavřených otázkácj je právě jedna odpověd správná. V testovém sešitě si můžete dělat poznámky, ale nebudou hodnoceny.",
+    "parts": [
+        {
+            "title": "Algoritmizace a programování",
+            "shortTitle": "Programování",
+            "closedQuestions": [
+                {
+                    "points": 1,
+                    "text": "Které z následujících tvrzení nejlépe popisuje pojem \"syntaxe\" v kontextu programovacích jazyků?",
+                    "options": [
+                        "Pravidla určující význam (sémantiku) jednotlivých příkazů.",
+                        "Soubor pravidel definujících správnou strukturu a zápis kódu.",
+                        "Proces překladu zdrojového kódu do strojového kódu.",
+                        "Způsob alokace paměti během běhu programu."
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Který z následujících jazyků primárně NENÍ interpretovaný (ve své čisté podobě je běžně kompilován do nativního strojového kódu před spuštěním)?",
+                    "options": [
+                        "Python",
+                        "JavaScript",
+                        "C++",
+                        "PHP"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Mezi základní vlastnosti algoritmu NEpatří:",
+                    "options": [
+                        "Konečnost (finitnost)",
+                        "Determinovanost",
+                        "Cykličnost (musí obsahovat alespoň jeden cyklus)",
+                        "Hromadnost (obecnost)"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Algoritmus \"Binary Search\" (binární vyhledávání) vyžaduje, aby:",
+                    "options": [
+                        "Pole bylo seřazené sestupně nebo vzestupně.",
+                        "Pole obsahovalo pouze číselné datové typy.",
+                        "Délka pole byla mocninou čísla 2.",
+                        "Prvky v poli byly uloženy v lineárním spojovém seznamu."
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "Jaká je průměrná časová složitost algoritmu QuickSort?",
+                    "options": [
+                        "O(1)",
+                        "O(n)",
+                        "O(n log n)",
+                        "O(n<sup>2</sup>)"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Který datový typ je nejvhodnější pro uložení hodnoty \"Pravda\" nebo \"Nepravda\"?",
+                    "options": [
+                        "Integer",
+                        "Float",
+                        "Boolean",
+                        "Char"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Jaký je hlavní rozdíl mezi datovou strukturou Zásobník (Stack) a Fronta (Queue)?",
+                    "options": [
+                        "Zásobník funguje na principu FIFO, Fronta na principu LIFO.",
+                        "Zásobník funguje na principu LIFO, Fronta na principu FIFO.",
+                        "Zásobník může obsahovat pouze čísla, Fronta jakékoliv objekty.",
+                        "Žádný rozdíl, obě struktury používají stejný mechanismus přístupu."
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Jaký bude výsledek logického výrazu: <code>(TRUE OR FALSE) AND (NOT FALSE)</code>?",
+                    "options": [
+                        "TRUE",
+                        "FALSE",
+                        "Záleží na programovacím jazyce.",
+                        "Výraz skončí chybou (NullPointerException)."
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "Co znamená pojem \"rekurze\" v programování?",
+                    "options": [
+                        "Funkce volá sama sebe uvnitř svého těla.",
+                        "Cyklické závislosti mezi dvěma různými třídami.",
+                        "Metoda vrací více hodnot najednou pomocí pole.",
+                        "Program využívá vícevláknové (multithread) zpracování."
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "Pokud program čte data ze souboru, který režim přístupu obvykle přepíše stávající obsah souboru?",
+                    "options": [
+                        "Append (připojit)",
+                        "Read (číst)",
+                        "Write (zápis)",
+                        "Execute (spustit)"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Jaký je hlavní znak \"Agilního\" vývoje softwaru v porovnání s modelem \"Vodopád\" (Waterfall)?",
+                    "options": [
+                        "Iterativní přístup a flexibilita vůči změnám v požadavcích.",
+                        "Striktní dodržování počáteční dokumentace bez možnosti změn.",
+                        "Absence fáze testování.",
+                        "Nutnost použít výhradně objektově orientované jazyky."
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "V rámci vývoje softwaru existuje fáze, při které vývojáři píšou automatizované skripty ověřující správnou funkčnost těch nejmenších možných izolovaných částí kódu (typicky jednotlivých tříd či funkcí). Jak se tato úroveň testování nazývá?",
+                    "options": [
+                        "Integrační testování (Integration testing)",
+                        "Akceptační testování (Acceptance testing)",
+                        "Jednotkové testování (Unit testing)",
+                        "Zátěžové testování (Stress testing)"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Který z následujících pojmů představuje základní princip objektově orientovaného programování (OOP)?",
+                    "options": [
+                        "Normalizace",
+                        "Zapouzdření",
+                        "Globalizace",
+                        "Kompilace"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Co platí o \"statické metodě\" (třídní metodě) v rámci OOP?",
+                    "options": [
+                        "Nelze ji zavolat, pokud neexistuje alespoň jedna instance dané třídy.",
+                        "Lze ji volat přímo na samotné třídě, aniž by bylo nutné vytvářet její instanci (objekt).",
+                        "Může měnit hodnoty instančních atributů libovolného objektu.",
+                        "Je to metoda, která neobsahuje žádný kód (je abstraktní)."
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Který návrhový vzor (Design Pattern) řeší situaci, kdy potřebujeme garantovat, že z dané třídy bude v paměti vytvořena vždy maximálně jedna jediná instance s globálním přístupovým bodem (např. třída zastupující spojení do databáze)?",
+                    "options": [
+                        "Singleton",
+                        "Factory Method",
+                        "Observer",
+                        "Decorator"
+                    ],
+                    "correctAnswer": "A"
+                }
+            ],
+            "openQuestions": [
+                {
+                    "type": "open",
+                    "text": "Určete, jakou hodnotu bude mít proměnná <code>x</code> po provedení následujícího pseudokódu:<div class=\"code-snippet\">x = 0<br>for i from 1 to 3:<br>&nbsp;&nbsp;&nbsp;&nbsp;x = x + i<br>x = x * 2</div>",
+                    "correctAnswer": "12",
+                    "points": 2
+                },
+                {
+                    "type": "open",
+                    "text": "Jak se nazývá OOP princip, který umožňuje, aby podtřída (potomek) převzala atributy a metody od nadtřídy (předka)?",
+                    "correctAnswer": "Dědičnost (Inheritance)",
+                    "points": 2
+                },
+                {
+                    "type": "open",
+                    "text": "Zapište asymptotickou časovou složitost (v notaci velkého O) algoritmu, který musí projít dvourozměrné pole o rozměrech <code>N x N</code> a provést operaci s každým prvkem.",
+                    "correctAnswer": "O(N^2)",
+                    "points": 2
+                },
+                {
+                    "text": "Jaké označení má graf, který obsahuje alespoň jednu hranu mezi uzly takovou, že vede jen jedním směrem?",
+                    "correctAnswer": "Orientovaný graf",
+                    "points": 2
+                },
+                {
+                    "text": "Představte si stromovou strukturu. Jaký algoritmus prohledávání použijete, pokud chcete nejprve prozkoumat všechny uzly v aktuální hloubce, než přejdete do větší hloubky?",
+                    "correctAnswer": "BFS (Breadth-First Search, Prohledávání do šířky)",
+                    "points": 2
+                }
+            ]
+        }
+    ]
+}

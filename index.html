@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generátor zkušební dokumentace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="app">
+        <div class="controls">
+            <h1>Generátor zkušební dokumentace</h1>
+            
+            <div>
+                <label for="json-upload"><strong>1. Vyberte soubor testu (JSON):</strong></label><br><br>
+                <input type="file" id="json-upload" accept=".json">
+            </div>
+
+            <div id="test-info" style="display:none; margin-top: 10px; padding: 10px; background: #e9ecef; border-radius: 4px;">
+                <strong id="info-title"></strong> (<span id="info-code"></span>)
+            </div>
+
+            <div style="margin-top: 15px;">
+                <label for="height-input"><strong>2. Výška buněk pro otevřené odpovědi (px):</strong></label><br><br>
+                <input type="number" id="height-input" value="75" step="5" style="width: 80px; padding: 5px;">
+            </div>
+
+            <div style="margin-top: 15px;">
+                <strong>3. Zvolte dokument k tisku:</strong>
+            </div>
+
+            <div class="btn-group">
+                <button id="btn-sesit" disabled>Testový sešit</button>
+                <button id="btn-arch" disabled>Záznamový arch</button>
+                <button id="btn-klic" disabled>Arch - Klíč</button>
+            </div>
+            
+            <p style="font-size: 9pt; color: #666; text-align: center; margin-top: 10px;">
+                Po kliknutí se zobrazí náhled určený pro tisk (Ctrl+P). K návratu do menu použijte tlačítko Zpět v prohlížeči nebo obnovte stránku.
+            </p>
+        </div>
+    </div>
+
+    <div id="print-area"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
