@@ -2,10 +2,11 @@
 
 Tato webová aplikace slouží k automatickému generování plně formátované zkušební dokumentace pro studenty z připravených dat. Aplikace funguje **kompletně offline** ve vašem webovém prohlížeči, nepotřebuje připojení k internetu ani žádný lokální server.
 
-Dokáže z jednoho datového zdroje (souboru formátu JSON) vygenerovat hned 3 podoby dokumentu připravené pro tisk na papír (A4):
+Dokáže z jednoho datového zdroje (souboru formátu JSON) vygenerovat hned 4 podoby dokumentu připravené pro tisk na papír (A4) nebo promítání:
 1. **Testový sešit** – Zadání pro studenta, úvodní pokyny, dvousloupcový text se všemi otázkami.
-2. **Záznamový arch** – Prázdná matice (tabulka) pro odpovědi studenta, tabulka hodnocení, prostor pro otevřené odpovědi a podpisy hodnotitelů.
-3. **Záznamový arch - Klíč** – Autorské řešení s červeně vyznačenými správnými odpověďmi a výpočtem maximálních bodů, které slouží učiteli jako šablona k rychlé opravě.
+2. **Testová prezentace** – Otázky zobrazené velkým písmem postupně po jedné na obrazovku, ideální pro přímé promítání žákům na tabuli.
+3. **Záznamový arch** – Prázdná matice (tabulka) pro odpovědi studenta, tabulka hodnocení, prostor pro otevřené odpovědi a podpisy hodnotitelů.
+4. **Záznamový arch - Klíč** – Autorské řešení s červeně vyznačenými správnými odpověďmi a výpočtem maximálních bodů, které slouží učiteli jako šablona k rychlé opravě.
 
 ---
 

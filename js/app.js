@@ -14,6 +14,7 @@ document.getElementById('json-upload').addEventListener('change', function(event
                 document.getElementById('btn-sesit').disabled = false;
                 document.getElementById('btn-arch').disabled = false;
                 document.getElementById('btn-klic').disabled = false;
+                document.getElementById('btn-prezentace').disabled = false;
             } catch (err) {
                 alert("Chyba při parsování JSON souboru.");
                 console.error(err);
@@ -43,6 +44,10 @@ document.getElementById('btn-arch').addEventListener('click', () => {
 
 document.getElementById('btn-klic').addEventListener('click', () => {
     if (currentTestData) showPrintArea(generateAnswerSheet(currentTestData, true));
+});
+
+document.getElementById('btn-prezentace').addEventListener('click', () => {
+    if (currentTestData) showPrintArea(generatePresentation(currentTestData));
 });
 
 function generateBooklet(data) {
@@ -216,4 +221,71 @@ function applyTypographyFix(element) {
             }
         }
     }
+}
+
+function generatePresentation(data) {
+    let html = `<div class="presentation-layout">`;
+
+    // Úvodní slide
+    html += `
+    <div class="slide title-slide">
+        <h1>${data.title}</h1>
+        <h2>${data.subject}</h2>
+        <div class="meta-info">
+            <p><strong>Úroveň:</strong> ${data.level}</p>
+            <p><strong>Časový limit:</strong> ${data.timeLimit}</p>
+        </div>
+        <div class="instructions-box">
+            ${data.instructions}
+        </div>
+    </div>`;
+
+    let globalQNum = 1;
+
+    data.parts.forEach((part, partIndex) => {
+        // Zpracování uzavřených otázek
+        part.closedQuestions.forEach(q => {
+            html += `
+            <div class="slide">
+                <div class="part-indicator">${data.parts.length > 1 ? `Část ${partIndex + 1}: ` : ''}${part.title}</div>
+                <div class="q-header">
+                    <span class="q-number">${globalQNum}.</span>
+                    <span class="q-points">(${q.points || 1} b.)</span>
+                </div>
+                <div class="q-text">${q.text}</div>
+                <div class="options-grid">`;
+            
+            const letters = ['A', 'B', 'C', 'D'];
+            q.options.forEach((opt, idx) => {
+                html += `<div class="option-item"><span class="option-letter">${letters[idx]}</span> ${opt}</div>`;
+            });
+
+            html += `
+                </div>
+            </div>`;
+            globalQNum++;
+        });
+
+        // Zpracování otevřených otázek
+        part.openQuestions.forEach(q => {
+            html += `
+            <div class="slide">
+                <div class="part-indicator">${data.parts.length > 1 ? `Část ${partIndex + 1}: ` : ''}${part.title}</div>
+                <div class="q-header">
+                    <span class="q-number">${globalQNum}.</span>
+                    <span class="q-points">(${q.points} b.)</span>
+                </div>
+                <div class="q-text">${q.text}</div>
+            </div>`;
+            globalQNum++;
+        });
+    });
+
+    html += `
+    <div class="slide end-slide">
+        <h1>Konec testu</h1>
+    </div>
+    </div>`;
+
+    return html;
 }

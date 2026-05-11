@@ -261,6 +261,108 @@ button:disabled {
     break-before: page;
 }
 
+/* Prezentace specifické styly */
+.presentation-layout {
+    font-size: 24pt;
+    line-height: 1.5;
+    background: #fff;
+    color: #000;
+}
+
+.presentation-layout .slide {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
+    border-bottom: 2px dashed #ccc;
+    page-break-after: always;
+    break-after: page;
+}
+
+.presentation-layout .slide:last-child {
+    border-bottom: none;
+}
+
+.presentation-layout .title-slide h1 {
+    font-size: 48pt;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.presentation-layout .title-slide h2 {
+    font-size: 32pt;
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.presentation-layout .meta-info {
+    text-align: center;
+    font-size: 24pt;
+    margin-bottom: 40px;
+}
+
+.presentation-layout .instructions-box {
+    border: 3px solid #000;
+    padding: 30px;
+    font-size: 20pt;
+    background-color: #f9f9f9;
+}
+
+.presentation-layout .part-indicator {
+    font-size: 20pt;
+    color: #666;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.presentation-layout .q-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.presentation-layout .q-text {
+    font-size: 36pt;
+    margin-bottom: 40px;
+}
+
+.presentation-layout .options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.presentation-layout .option-item {
+    font-size: 28pt;
+    display: flex;
+    align-items: center;
+}
+
+.presentation-layout .option-letter {
+    font-weight: bold;
+    margin-right: 20px;
+    background: #000;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.presentation-layout .end-slide h1 {
+    font-size: 48pt;
+    text-align: center;
+}
+
 /* Tisková media query */
 @media print {
     @page {
@@ -327,5 +429,11 @@ button:disabled {
     .arch-layout p {
         page-break-after: avoid;
         break-after: avoid;
+    }
+
+    .presentation-layout .slide {
+        min-height: auto; /* Remove 100vh for print if we want to print as normal pages */
+        height: 100vh;    /* Force page height for printing */
+        border-bottom: none;
     }
 }
