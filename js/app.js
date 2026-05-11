@@ -1,16 +1,16 @@
 let currentTestData = null;
 
-document.getElementById('json-upload').addEventListener('change', function(event) {
+document.getElementById('json-upload').addEventListener('change', function (event) {
     const file = event.target.files[0];
     if (file) {
         const reader = new FileReader();
-        reader.onload = function(e) {
+        reader.onload = function (e) {
             try {
                 currentTestData = JSON.parse(e.target.result);
                 document.getElementById('info-title').textContent = currentTestData.title;
                 document.getElementById('info-code').textContent = currentTestData.code;
                 document.getElementById('test-info').style.display = 'block';
-                
+
                 document.getElementById('btn-sesit').disabled = false;
                 document.getElementById('btn-arch').disabled = false;
                 document.getElementById('btn-klic').disabled = false;
@@ -29,7 +29,7 @@ function showPrintArea(html) {
     const printArea = document.getElementById('print-area');
     printArea.innerHTML = html + '<div class="no-print" style="text-align: center; margin-top: 20px;"><button onclick="location.reload()" style="background:#dc3545; padding:10px 20px; border-radius:4px; color:white; border:none; cursor:pointer;">Zpět do menu</button></div>';
     printArea.style.display = 'block';
-    
+
     // Provedeme typografickou úpravu textu (pevné mezery)
     applyTypographyFix(printArea);
 }
@@ -109,7 +109,7 @@ function generateAnswerSheet(data, isKey) {
     // Úvodní část a hodnocení
     html += `
         <div>
-            <h1 style="margin-top: 0; ${isKey ? 'color: red;' : ''}">ZÁZNAMOVÝ ARCH</h1>
+            <h1 style="margin-top: 0; ${isKey ? 'color: red;' : ''}">ZÁZNAMOVÝ ARCH<br><small style="font-size: 0.6em; color: #555; display: block; margin-top: 5px; font-weight: normal;">${data.code}</small></h1>
             <div class="info-box ${isKey ? 'key' : ''}">
                 <div style="grid-column: 1 / -1;"><strong>Jméno a příjmení:</strong> <br><br>
                     ${isKey ? '<span class="key-text" style="font-size: 14pt;">KLÍČ SPRÁVNÝCH ŘEŠENÍ</span>' : '<input type="text" style="width: 95%;">'}
@@ -127,7 +127,7 @@ function generateAnswerSheet(data, isKey) {
                     <th>Max. bodů</th>
                     <th>Dosaženo</th>
                 </tr>`;
-    
+
     let totalMax = 0;
     data.parts.forEach((part, idx) => {
         let maxPts = part.closedQuestions.reduce((acc, q) => acc + (q.points || 1), 0) + part.openQuestions.reduce((acc, q) => acc + (q.points || 2), 0);
@@ -176,7 +176,7 @@ function generateAnswerSheet(data, isKey) {
                     <th style="width: 25px;">C</th>
                     <th style="width: 25px;">D</th>
                 </tr>`;
-        
+
         const opts = ["A", "B", "C", "D"];
         part.closedQuestions.forEach(q => {
             html += `<tr><td class="q-number">${globalQNum}</td>`;
@@ -192,7 +192,7 @@ function generateAnswerSheet(data, isKey) {
         });
 
         html += `<tr><th colspan="6">Otevřené úlohy</th></tr>`;
-        
+
         part.openQuestions.forEach(q => {
             let ansHtml = isKey ? q.correctAnswer : '';
             const customHeight = document.getElementById('height-input') ? document.getElementById('height-input').value : 75;
@@ -229,7 +229,7 @@ function generatePresentation(data) {
     // Úvodní slide
     html += `
     <div class="slide title-slide">
-        <h1>${data.title}</h1>
+        <h1>${data.title}<br><small style="font-size: 0.7em; font-weight: normal;">${data.code}</small></h1>
         <h2>${data.subject}</h2>
         <div class="meta-info">
             <p><strong>Úroveň:</strong> ${data.level}</p>
@@ -254,7 +254,7 @@ function generatePresentation(data) {
                 </div>
                 <div class="q-text">${q.text}</div>
                 <div class="options-grid">`;
-            
+
             const letters = ['A', 'B', 'C', 'D'];
             q.options.forEach((opt, idx) => {
                 html += `<div class="option-item"><span class="option-letter">${letters[idx]}</span> ${opt}</div>`;
