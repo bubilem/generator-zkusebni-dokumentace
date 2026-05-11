@@ -1,0 +1,604 @@
+{
+    "code": "VOŠ-2026J-APR-DBS-WEB-V01",
+    "title": "Testový sešit",
+    "subject": "Algoritmizace a programování, Databázové systémy, Webové aplikace",
+    "level": "VOŠ (Vyšší odborná škola)",
+    "timeLimit": "90 minut",
+    "instructions": "Záznamy provádějte výhradně do záznamového archu. V uzavřených otázkácj je právě jedna odpověd správná. V testovém sešitě si můžete dělat poznámky, ale nebudou hodnoceny.",
+    "parts": [
+        {
+            "title": "Algoritmizace a programování",
+            "shortTitle": "Programování",
+            "closedQuestions": [
+                {
+                    "points": 1,
+                    "text": "Které z následujících tvrzení nejlépe popisuje pojem \"syntaxe\" v kontextu programovacích jazyků?",
+                    "options": [
+                        "Pravidla určující význam (sémantiku) jednotlivých příkazů.",
+                        "Soubor pravidel definujících správnou strukturu a zápis kódu.",
+                        "Proces překladu zdrojového kódu do strojového kódu.",
+                        "Způsob alokace paměti během běhu programu."
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Který z následujících jazyků primárně NENÍ interpretovaný (ve své čisté podobě je běžně kompilován do nativního strojového kódu před spuštěním)?",
+                    "options": [
+                        "Python",
+                        "JavaScript",
+                        "C++",
+                        "PHP"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Mezi základní vlastnosti algoritmu NEpatří:",
+                    "options": [
+                        "Konečnost (finitnost)",
+                        "Determinovanost",
+                        "Cykličnost (musí obsahovat alespoň jeden cyklus)",
+                        "Hromadnost (obecnost)"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Algoritmus \"Binary Search\" (binární vyhledávání) vyžaduje, aby:",
+                    "options": [
+                        "Pole bylo seřazené sestupně nebo vzestupně.",
+                        "Pole obsahovalo pouze číselné datové typy.",
+                        "Délka pole byla mocninou čísla 2.",
+                        "Prvky v poli byly uloženy v lineárním spojovém seznamu."
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "Jaká je průměrná časová složitost algoritmu QuickSort?",
+                    "options": [
+                        "O(1)",
+                        "O(n)",
+                        "O(n log n)",
+                        "O(n<sup>2</sup>)"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Který datový typ je nejvhodnější pro uložení hodnoty \"Pravda\" nebo \"Nepravda\"?",
+                    "options": [
+                        "Integer",
+                        "Float",
+                        "Boolean",
+                        "Char"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Jaký je hlavní rozdíl mezi datovou strukturou Zásobník (Stack) a Fronta (Queue)?",
+                    "options": [
+                        "Zásobník funguje na principu FIFO, Fronta na principu LIFO.",
+                        "Zásobník funguje na principu LIFO, Fronta na principu FIFO.",
+                        "Zásobník může obsahovat pouze čísla, Fronta jakékoliv objekty.",
+                        "Žádný rozdíl, obě struktury používají stejný mechanismus přístupu."
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Jaký bude výsledek logického výrazu: <code>(TRUE OR FALSE) AND (NOT FALSE)</code>?",
+                    "options": [
+                        "TRUE",
+                        "FALSE",
+                        "Záleží na programovacím jazyce.",
+                        "Výraz skončí chybou (NullPointerException)."
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "Co znamená pojem \"rekurze\" v programování?",
+                    "options": [
+                        "Funkce volá sama sebe uvnitř svého těla.",
+                        "Cyklické závislosti mezi dvěma různými třídami.",
+                        "Metoda vrací více hodnot najednou pomocí pole.",
+                        "Program využívá vícevláknové (multithread) zpracování."
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "Pokud program čte data ze souboru, který režim přístupu obvykle přepíše stávající obsah souboru?",
+                    "options": [
+                        "Append (připojit)",
+                        "Read (číst)",
+                        "Write (zápis)",
+                        "Execute (spustit)"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Jaký je hlavní znak \"Agilního\" vývoje softwaru v porovnání s modelem \"Vodopád\" (Waterfall)?",
+                    "options": [
+                        "Iterativní přístup a flexibilita vůči změnám v požadavcích.",
+                        "Striktní dodržování počáteční dokumentace bez možnosti změn.",
+                        "Absence fáze testování.",
+                        "Nutnost použít výhradně objektově orientované jazyky."
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "V rámci vývoje softwaru existuje fáze, při které vývojáři píšou automatizované skripty ověřující správnou funkčnost těch nejmenších možných izolovaných částí kódu (typicky jednotlivých tříd či funkcí). Jak se tato úroveň testování nazývá?",
+                    "options": [
+                        "Integrační testování (Integration testing)",
+                        "Akceptační testování (Acceptance testing)",
+                        "Jednotkové testování (Unit testing)",
+                        "Zátěžové testování (Stress testing)"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Který z následujících pojmů představuje základní princip objektově orientovaného programování (OOP)?",
+                    "options": [
+                        "Normalizace",
+                        "Zapouzdření",
+                        "Globalizace",
+                        "Kompilace"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Co platí o \"statické metodě\" (třídní metodě) v rámci OOP?",
+                    "options": [
+                        "Nelze ji zavolat, pokud neexistuje alespoň jedna instance dané třídy.",
+                        "Lze ji volat přímo na samotné třídě, aniž by bylo nutné vytvářet její instanci (objekt).",
+                        "Může měnit hodnoty instančních atributů libovolného objektu.",
+                        "Je to metoda, která neobsahuje žádný kód (je abstraktní)."
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Který návrhový vzor (Design Pattern) řeší situaci, kdy potřebujeme garantovat, že z dané třídy bude v paměti vytvořena vždy maximálně jedna jediná instance s globálním přístupovým bodem (např. třída zastupující spojení do databáze)?",
+                    "options": [
+                        "Singleton",
+                        "Factory Method",
+                        "Observer",
+                        "Decorator"
+                    ],
+                    "correctAnswer": "A"
+                }
+            ],
+            "openQuestions": [
+                {
+                    "text": "Určete, jakou hodnotu bude mít proměnná <code>x</code> po provedení následujícího pseudokódu:<div class=\"code-snippet\">x = 0<br>for i from 1 to 3:<br>&nbsp;&nbsp;&nbsp;&nbsp;x = x + i<br>x = x * 2</div>",
+                    "correctAnswer": "12",
+                    "points": 2
+                },
+                {
+                    "text": "Jak se nazývá OOP princip, který umožňuje, aby podtřída (potomek) převzala atributy a metody od nadtřídy (předka)?",
+                    "correctAnswer": "Dědičnost (Inheritance)",
+                    "points": 2
+                },
+                {
+                    "text": "Zapište asymptotickou časovou složitost (v notaci velkého O) algoritmu, který musí projít dvourozměrné pole o rozměrech <code>N x N</code> a provést operaci s každým prvkem.",
+                    "correctAnswer": "O(N^2)",
+                    "points": 2
+                },
+                {
+                    "text": "Jaké označení má graf, který obsahuje alespoň jednu hranu mezi uzly takovou, že vede jen jedním směrem?",
+                    "correctAnswer": "Orientovaný graf",
+                    "points": 2
+                },
+                {
+                    "text": "Představte si stromovou strukturu. Jaký algoritmus prohledávání použijete, pokud chcete nejprve prozkoumat všechny uzly v aktuální hloubce, než přejdete do větší hloubky?",
+                    "correctAnswer": "BFS (Breadth-First Search, Prohledávání do šířky)",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "title": "Databázové systémy",
+            "shortTitle": "Databáze",
+            "closedQuestions": [
+                {
+                    "points": 1,
+                    "text": "Co znamená zkratka SŘBD (anglicky DBMS)?",
+                    "options": [
+                        "Systém řízení bází dat",
+                        "Standardní řetězec binárních dat",
+                        "Systém pro rychlé bitové dotazování",
+                        "Struktura řízená balíkem dat"
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "V E-R modelu představuje \"Kardinalita\" (např. 1:1, 1:N, M:N):",
+                    "options": [
+                        "Maximální délku znaků v atributu.",
+                        "Počet záznamů, které tabulka aktuálně obsahuje.",
+                        "Typ vztahu (vazby) mezi entitami podle počtu možných výskytů.",
+                        "Úroveň zabezpečení dané entity."
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Co je to primární klíč (Primary Key) v relačním modelu?",
+                    "options": [
+                        "Sloupec, jehož hodnoty se nesmí opakovat a jednoznačně identifikují každý záznam.",
+                        "Sloupec, který propojuje dvě tabulky pomocí cizího klíče.",
+                        "Sloupec s názvem \"id\".",
+                        "První sloupec, který byl vytvořen příkazem CREATE TABLE."
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "Které z následujících omezení je obvykle vyžadováno pro splnění 1. normální formy (1.NF)?",
+                    "options": [
+                        "Všechny neklíčové atributy musí být plně závislé na celém primárním klíči.",
+                        "Každý atribut musí obsahovat pouze atomické (nedělitelné) hodnoty.",
+                        "Tabulka nesmí obsahovat cizí klíče.",
+                        "Každá tabulka musí mít alespoň jeden trigger."
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Který příkaz patří do skupiny DDL (Data Definition Language) v SQL?",
+                    "options": [
+                        "SELECT",
+                        "UPDATE",
+                        "INSERT",
+                        "ALTER"
+                    ],
+                    "correctAnswer": "D"
+                },
+                {
+                    "points": 1,
+                    "text": "Pokud chceme smazat z tabulky \"Uzivatele\" všechny záznamy, ale ponechat samotnou strukturu tabulky, jaký SQL příkaz použijeme?",
+                    "options": [
+                        "DROP TABLE Uzivatele;",
+                        "DELETE FROM Uzivatele;",
+                        "REMOVE Uzivatele;",
+                        "CLEAR TABLE Uzivatele;"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Co zajišťuje vlastnost ACID v kontextu databázových transakcí?",
+                    "options": [
+                        "Automatické šifrování všech uložených dat.",
+                        "Spolehlivost transakcí.",
+                        "Agregační výpočty v reálném čase.",
+                        "Automatické cachování dotazů do paměti RAM v transakcích."
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Která z klauzulí dotazu SELECT se používá pro filtrování záznamů (selekci)?",
+                    "options": [
+                        "ORDER BY",
+                        "GROUP BY",
+                        "WHERE",
+                        "JOIN"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Jaký operátor byste použili v klauzuli WHERE, pokud chcete najít text, který začíná písmenem \"K\"?",
+                    "options": [
+                        "WHERE jmeno = 'K*'",
+                        "WHERE jmeno LIKE 'K%'",
+                        "WHERE jmeno BEGINS 'K'",
+                        "WHERE jmeno IS 'K...'"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Který typ JOIN vrátí všechny záznamy z levé tabulky a k nim odpovídající záznamy z pravé tabulky (a tam, kde záznam v pravé chybí, doplní NULL)?",
+                    "options": [
+                        "INNER JOIN",
+                        "RIGHT JOIN",
+                        "LEFT JOIN",
+                        "FULL OUTER JOIN"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Která z následujících SQL funkcí je agregační?",
+                    "options": [
+                        "SUBSTRING()",
+                        "COUNT()",
+                        "NOW()",
+                        "UPPER()"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Když použijete klauzuli GROUP BY, s jakou další klauzulí můžete filtrovat VÝSLEDKY seskupení (např. zobrazit jen skupiny mající počet > 5)?",
+                    "options": [
+                        "WHERE",
+                        "HAVING",
+                        "ORDER BY",
+                        "LIMIT"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Co je to \"Trigger\" v relační databázi?",
+                    "options": [
+                        "Grafické rozhraní pro prohlížení dat.",
+                        "Záložní kopie databáze vytvořená v pravidelný čas.",
+                        "Kód, který se automaticky spustí jako reakce na určitou událost (např. INSERT) v tabulce.",
+                        "Virtuální tabulka definovaná pomocí SELECT dotazu."
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Co je to \"Pohled\" (View) v SQL?",
+                    "options": [
+                        "Virtuální tabulka, jejíž obsah je definován uloženým dotazem SELECT.",
+                        "Nástroj pro vizualizaci E-R diagramu.",
+                        "Trvalá tabulka, která ukládá logy chyb.",
+                        "Oprávnění uživatele pouze pro čtení databáze."
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "Co je to \"SQL Injection\"?",
+                    "options": [
+                        "Optimalizační technika pro zrychlení provádění dotazů.",
+                        "Bezpečnostní zranitelnost spočívající ve vložení škodlivého kódu do vstupních SQL dotazů.",
+                        "Proces importu velkého množství dat (např. z CSV).",
+                        "Vestavěná metoda pro propojení PHP a MySQL."
+                    ],
+                    "correctAnswer": "B"
+                }
+            ],
+            "openQuestions": [
+                {
+                    "text": "Napište SQL příkaz, který vloží nový řádek do tabulky <code>Zaci</code> do sloupců <code>Jmeno</code> a <code>Trida</code> s hodnotami 'Jan' a 'A1'.",
+                    "correctAnswer": "INSERT INTO Zaci (Jmeno, Trida) VALUES ('Jan', 'A1');",
+                    "points": 2
+                },
+                {
+                    "text": "Máte tabulku <code>Zbozi(ID, Nazev, Cena)</code>. Napište SQL dotaz, který vypíše pouze názvy zboží, jehož cena je vyšší než 500.",
+                    "correctAnswer": "SELECT Nazev FROM Zbozi WHERE Cena > 500;",
+                    "points": 2
+                },
+                {
+                    "text": "Jaký typ vazby vznikne v relační databázi (mezi tabulkami), pokud převádíme z konceptuálního modelu vazbu typu M:N (Mnoho ku Mnoha)? Co je nutné k její realizaci vytvořit?",
+                    "correctAnswer": "Vazební (spojovací) tabulka",
+                    "points": 2
+                },
+                {
+                    "text": "Uvažujme dotaz: <code>SELECT Trida, COUNT(ID) FROM Zaci GROUP BY Trida;</code> Jaký údaj vrátí tento dotaz pro každý řádek výsledku?",
+                    "correctAnswer": "Počet žáků v dané třídě",
+                    "points": 2
+                },
+                {
+                    "text": "Který konkrétní datový typ v SQL (např. v MySQL nebo PostgreSQL) je ideální pro uložení velmi dlouhého textu, jakým je například obsah článku nebo knihy?",
+                    "correctAnswer": "TEXT (nebo LONGTEXT / CLOB)",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "title": "Webové aplikace",
+            "shortTitle": "Web. aplikace",
+            "closedQuestions": [
+                {
+                    "points": 1,
+                    "text": "Který z protokolů je primárně používán pro přenos HTML dokumentů mezi klientem a serverem?",
+                    "options": [
+                        "FTP",
+                        "SMTP",
+                        "HTTP(S)",
+                        "SSH"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "V HTML dokumentu se párová značka pro vložení hypertextového odkazu zapisuje jako:",
+                    "options": [
+                        "<code>&lt;link url=\"...\"&gt;...&lt;/link&gt;</code>",
+                        "<code>&lt;a href=\"...\"&gt;...&lt;/a&gt;</code>",
+                        "<code>&lt;nav target=\"...\"&gt;...&lt;/nav&gt;</code>",
+                        "<code>&lt;href link=\"...\"&gt;...&lt;/href&gt;</code>"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Jaký je správný zápis CSS selektoru pro prvek, který má nastaven atribut <code>id=\"hlavicka\"</code>?",
+                    "options": [
+                        ".hlavicka",
+                        "#hlavicka",
+                        "*hlavicka",
+                        "@hlavicka"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Která hodnota CSS vlastnosti <code>display</code> se používá pro aktivaci jednorozměrného modelu rozvržení (velmi užitečného např. pro snadné zarovnání prvků do řádku či sloupce a distribuci volného místa)?",
+                    "options": [
+                        "grid",
+                        "flex",
+                        "block",
+                        "inline-block"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Kde běží jazyk JavaScript v případě standardní interakce uživatele s webovou stránkou (např. obsluha kliknutí na tlačítko)?",
+                    "options": [
+                        "Výhradně na databázovém serveru.",
+                        "Na webovém serveru (Apache/Nginx) před odesláním dokumentu.",
+                        "Na straně klienta (v internetovém prohlížeči uživatele).",
+                        "V lokální síti routeru."
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Co v JavaScriptu označuje pojem \"DOM\"?",
+                    "options": [
+                        "Data Object Model – databázi pro ukládání stavu aplikace.",
+                        "Document Object Model – stromovou reprezentaci HTML dokumentu přístupnou ze skriptů.",
+                        "Dynamic Output Module – knihovnu pro tisk na tiskárnu.",
+                        "Direct Overlay Memory – část RAM alokovanou prohlížečem pro canvas."
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "V jazyce PHP se všechny proměnné zapisují počínaje znakem:",
+                    "options": [
+                        "@",
+                        "#",
+                        "$",
+                        "%"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Pokud odesíláme data z webového formuláře tak, aby parametry a jejich hodnoty NEBYLY viditelné v URL adrese prohlížeče, v jakém superglobálním poli v PHP tato data následně zpracujeme?",
+                    "options": [
+                        "$_POST",
+                        "$_FORM",
+                        "$_GET",
+                        "$_SERVER"
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "points": 1,
+                    "text": "Co je hlavním účelem použití technologie <code>SESSION</code> v PHP?",
+                    "options": [
+                        "Urychlení vykreslování obrázků na straně klienta.",
+                        "Uchování stavových dat o uživateli (např. přihlášení) napříč různými HTTP požadavky.",
+                        "Automatické formátování SQL dotazů.",
+                        "Odesílání hromadných e-mailů."
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "V softwarové architektuře MVC (Model-View-Controller) je jedna z vrstev zodpovědná převážně za prezentaci dat uživateli a generování konečného uživatelského rozhraní (např. HTML struktury). O kterou vrstvu se jedná?",
+                    "options": [
+                        "Model",
+                        "Controller",
+                        "View",
+                        "Router"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Co znamená zkratka API v kontextu webového vývoje?",
+                    "options": [
+                        "Asynchronous Page Interface",
+                        "Application Programming Interface",
+                        "Active Processor Integration",
+                        "Advanced PHP Instructions"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Který datový formát se dnes nejčastěji používá pro výměnu strukturovaných dat přes webové API (včetně komunikace AJAX/Fetch v JS)?",
+                    "options": [
+                        "CSV",
+                        "XML",
+                        "JSON",
+                        "YAML"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Který nástroj se primárně používá jako systém pro správu verzí (verzování kódu) při týmové spolupráci?",
+                    "options": [
+                        "Docker",
+                        "Webpack",
+                        "Git",
+                        "Composer"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "points": 1,
+                    "text": "Zabezpečení webu \"HTTPS\" znamená, že:",
+                    "options": [
+                        "Web je chráněn před SQL injekcí.",
+                        "Komunikace mezi serverem a prohlížečem je šifrována (zpravidla pomocí TLS/SSL).",
+                        "Stránka má platný certifikát, který zaručuje, že neobsahuje žádné počítačové viry.",
+                        "Nelze kopírovat text zobrazený na stránce."
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "points": 1,
+                    "text": "Jak se označuje soubor metod a postupů, jejichž cílem je zlepšit pozici webové stránky v přirozených (neplacených) výsledcích vyhledávačů (např. Google či Seznam)?",
+                    "options": [
+                        "SEO (Search Engine Optimization)",
+                        "SEM (Search Engine Marketing)",
+                        "UX (User Experience)",
+                        "PPC (Pay Per Click)"
+                    ],
+                    "correctAnswer": "A"
+                }
+            ],
+            "openQuestions": [
+                {
+                    "text": "Předpokládejme tento kód v JavaScriptu:<div class=\"code-snippet\">let a = \"5\";<br>let b = 2;<br>console.log(a + b);</div>Jaký výstup se zobrazí v konzoli?",
+                    "correctAnswer": "\"52\"",
+                    "points": 2
+                },
+                {
+                    "text": "Jaká vestavěná funkce nebo vlastnost v JavaScriptu (na objektu document) se použije, pokud chceme vybrat právě jeden HTML prvek podle jeho <code>id</code> (např. id=\"box\")?",
+                    "correctAnswer": "document.getElementById('box')",
+                    "points": 2
+                },
+                {
+                    "text": "Co v PHP znamená a jaký je rozdíl mezi operátory <code>==</code> a <code>===</code> ?",
+                    "correctAnswer": "== porovná hodnoty, === porovná i datové typy",
+                    "points": 2
+                },
+                {
+                    "text": "Zapište CSS selektor, kterým vyberete všechny elementy <code>&lt;p&gt;</code>, které se nacházejí KDYKOLIV uvnitř elementu s třídou <code>.clanek</code>.",
+                    "correctAnswer": ".clanek p",
+                    "points": 2
+                },
+                {
+                    "text": "Určete, jaký bude přesný textový výstup následujícího PHP skriptu:<div class=\"code-snippet\">$vysledek = \"\";<br>$cisla = [1, 2, 3];<br>foreach ($cisla as $x) {<br>&nbsp;&nbsp;&nbsp;&nbsp;$vysledek .= $x;<br>}<br>echo $vysledek;</div>",
+                    "correctAnswer": "\"123\" (nebo jen 123)",
+                    "points": 2
+                }
+            ]
+        }
+    ]
+}
