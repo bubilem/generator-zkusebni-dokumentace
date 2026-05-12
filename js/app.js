@@ -118,7 +118,7 @@ function generateAnswerSheet(data, isKey) {
                 <div><strong>Datum:</strong> <br><br><input type="text" ${isKey ? 'disabled' : ''}></div>
             </div>
             
-            <p><strong>Pokyny:</strong> ${isKey ? 'Toto je autorské řešení určené pro učitele jako šablona (klíč) pro opravu.' : 'U uzavřených úloh křížkem (X) označte správnou odpověď do příslušného čtverečku. Pokud se spletete, políčko začerněte a křížek udělejte do nového. U otevřených úloh vepište odpověď čitelně do vyhrazeného prostoru.'}</p>
+            <p><strong>Pokyny:</strong> ${isKey ? 'Toto je autorské řešení určené pro učitele jako šablona (klíč) pro opravu.' : data.instructions}</p>
 
             <h2>Hodnocení</h2>
             <table style="margin-top: 20px;">
